@@ -29,6 +29,9 @@ if ( sizeof($request_array['events']) > 0 )
 		else if(($text== "ตอนนี้อยู่ที่ไหน")||($text== "ตอนนี้อยู่ไหน")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
 			$reply_message = 'ขณะนี้อยู่ที่ห้องเรียน IF-5T05 ...!!!';
 		}
+	  	else if(($text== "coke")||($text== "โค้ก")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
+			$reply_message = 'หล่อ';
+		}
 		else
 		{
 			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
